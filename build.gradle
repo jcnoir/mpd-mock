@@ -23,7 +23,6 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
     compile "net.jthink:jaudiotagger:$jaudiotaggerVersion"
-    testCompile group: 'junit', name: 'junit', version: "$junitVersion"
     testCompile "org.jetbrains.kotlin:kotlin-test:$kotlinVersion"
 }
 
