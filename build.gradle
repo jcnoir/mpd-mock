@@ -7,8 +7,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.2"
-        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.github.jengelman.gradle.plugins:shadow:$shadowVersion"
     }
 }
 apply plugin: 'java'
@@ -21,10 +21,10 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.2"
-    compile 'net.jthink:jaudiotagger:2.2.5'
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-    testCompile 'org.jetbrains.kotlin:kotlin-test:1.0.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    compile "net.jthink:jaudiotagger:$jaudiotaggerVersion"
+    testCompile group: 'junit', name: 'junit', version: "$junitVersion"
+    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlinVersion"
 }
 
 
